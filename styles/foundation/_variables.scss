@@ -49,7 +49,7 @@ $em-base: $base-font-size;
 // $default-float: left;
 
 // $body-bg: #fff;
-$body-font-color: #717172;
+$body-font-color: #a6a7a9;
 $body-font-family: Arial, Helvetica, "Helvetica", "Helvetica Neue", sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -108,8 +108,8 @@ $primary-color: #3d383c;
 
 // Media Queries
 
-$small-screen: 767px;
-// $medium-screen: 1280px;
+$small-screen: 768px;
+$medium-screen: 1200px;
 // $large-screen: 1440px;
 
 $screen: "only screen";
@@ -124,7 +124,7 @@ $small-max: "only screen and (max-width: #{$small-screen})";
 // Grid Variables
 //
 
-$row-width: emCalc(1266px);
+$row-width: emCalc(1200px);
 $column-gutter: emCalc(12);
 //$total-columns: 12;
 //
@@ -267,7 +267,7 @@ $anchor-font-color-hover: darken($primary-color, 5%);
 
 // Base for lots of form spacing and positioning styles
 
-// $form-spacing: emCalc(16px);
+$form-spacing: emCalc(14px);
 
 // Labels
 
@@ -286,7 +286,7 @@ $anchor-font-color-hover: darken($primary-color, 5%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-box-shadow: inset 0 0 0 rgba(0,0,0,0.1);
 
 // Fieldset border and spacing.
 
@@ -326,7 +326,7 @@ $anchor-font-color-hover: darken($primary-color, 5%);
 // $button-tny: emCalc(7px);
 // $button-sml: emCalc(9px);
 // $button-med: emCalc(12px);
-// $button-lrg: emCalc(16px);
+$button-lrg: emCalc(16px);
 
 // Display property.
 
@@ -395,10 +395,10 @@ $anchor-font-color-hover: darken($primary-color, 5%);
 
 // Large dropdown buttons
 
-// $dropdown-button-padding-lrg: $button-lrg * 4;
-// $dropdown-button-pip-size-lrg: $button-lrg - emCalc(6px);
-// $dropdown-button-pip-right-lrg: $button-lrg + emCalc(12px);
-// $dropdown-button-pip-top-lrg: -$button-lrg / 2 + emCalc(3px);
+$dropdown-button-padding-lrg: $button-lrg * 3;
+$dropdown-button-pip-size-lrg: $button-lrg - emCalc(6px);
+$dropdown-button-pip-right-lrg: $button-lrg + emCalc(12px);
+$dropdown-button-pip-top-lrg: -$button-lrg / 2 + emCalc(3px);
 
 //
 // Split Button Variables
@@ -559,9 +559,9 @@ $crumb-slash-color: #3d383c;
 
 // Basic form styles input styles
 
-// $custom-form-border-color: #ccc;
-// $custom-form-border-size: 1px;
-// $custom-form-bg: #fff;
+$custom-form-border-color: transparent;
+$custom-form-border-size: 1px;
+$custom-form-bg: #dadada;
 // $custom-form-bg-disabled: #ddd;
 // $custom-form-input-size: 16px;
 // $custom-form-check-color: #222;
@@ -571,12 +571,12 @@ $crumb-slash-color: #3d383c;
 
 // Custom select form element.
 
-// $custom-select-bg: #fff;
-// $custom-select-fade-to-color: #f3f3f3;
-// $custom-select-border-color: #ddd;
-// $custom-select-triangle-color: #aaa;
-// $custom-select-triangle-color-open: #222;
-// $custom-select-height: emCalc(13px) + ($form-spacing * 1.5);
+$custom-select-bg: #dadada;
+$custom-select-fade-to-color: #dadada;
+$custom-select-border-color: #dadada;
+$custom-select-triangle-color: #09558a;
+$custom-select-triangle-color-open: #09558a;
+$custom-select-height: emCalc(13px) + ($form-spacing * 1.0);
 // $custom-select-margin-bottom: emCalc(20px);
 // $custom-select-font-color-selected: #141414;
 // $custom-select-disabled-color: #888;
@@ -584,7 +584,7 @@ $crumb-slash-color: #3d383c;
 // Custom select dropdown element.
 
 // $custom-dropdown-height: 200px;
-// $custom-dropdown-bg: #fff;
+$custom-dropdown-bg: #dadada;
 // $custom-dropdown-border-color: darken(#fff, 20%);
 // $custom-dropdown-border-width: 1px;
 // $custom-dropdown-border-style: solid;
@@ -594,7 +594,7 @@ $crumb-slash-color: #3d383c;
 // $custom-dropdown-font-color-selected: #000;
 // $custom-dropdown-shadow: 0 2px 2px 0px rgba(0,0,0,0.1);
 // $custom-dropdown-offset-top: none;
-// $custom-dropdown-list-padding: emCalc(4px);
+$custom-dropdown-list-padding: emCalc(2px);
 // $custom-dropdown-left-padding: emCalc(6px);
 // $custom-dropdown-right-padding: emCalc(38px);
 // $custom-dropdown-list-item-min-height: emCalc(24px);
@@ -605,7 +605,7 @@ $crumb-slash-color: #3d383c;
 
 // Height and width styles.
 
-// $f-dropdown-max-width: 200px;
+$f-dropdown-max-width: 200px;
 // $f-dropdown-height: auto;
 // $f-dropdown-max-height: none;
 // $f-dropdown-margin-top: 2px;
@@ -622,9 +622,9 @@ $crumb-slash-color: #3d383c;
 
 // Triangle pip.
 
-// $f-dropdown-triangle-size: 6px;
-// $f-dropdown-triangle-color: #fff;
-// $f-dropdown-triangle-side-offset: 10px;
+//$f-dropdown-triangle-size: 16px;
+//$f-dropdown-triangle-color: #fff;
+//$f-dropdown-triangle-side-offset: 10px;
 
 // List elements.
 
@@ -960,14 +960,14 @@ $reveal-overlay-bg: rgba(#000, .80);
 
 $reveal-modal-bg: #404040;
 // $reveal-position-top: 50px;
-// $reveal-default-width: 80%;
+$reveal-default-width: 80%;
 $reveal-modal-padding: 10px 0 !important;
 // $reveal-box-shadow: 0 0 10px rgba(#000,.4);
 
 // Reveal close button
 
-$reveal-close-font-size: emCalc(14px);
-$reveal-close-top: emCalc(14px);
+$reveal-close-font-size: emCalc(22px);
+$reveal-close-top: emCalc(11px);
 $reveal-close-side: emCalc(14px);
 $reveal-close-color: #fff;
 $reveal-close-weight: normal;
@@ -1184,16 +1184,16 @@ $reveal-border-color: #404040;
 
 // Background color for the top bar
 
-$topbar-bg:                            #1f77bc !default;
+$topbar-bg:                            #000 !default;
 
 // Height and margin
 
-$topbar-height:                        60px;
-$topbar-margin-bottom:                 emCalc(0);
+$topbar-height:                        58px;
+// $topbar-margin-bottom:                 emCalc(30px);
 
 // Control Input height for top bar
 
-$topbar-input-height:                  60px;
+$topbar-input-height:                  58px;
 
 // Controlling the styles for the title in the top bar
 
@@ -1202,23 +1202,23 @@ $topbar-input-height:                  60px;
 
 // Style the top bar dropdown elements
 
-$topbar-dropdown-bg:                   #1f77bc;
-$topbar-dropdown-link-color:           #00c6ed;
-$topbar-dropdown-link-bg:              #1f77bc;
+//$topbar-dropdown-bg:                   #00c6ed;
+//$topbar-dropdown-link-color:           #00c6ed;
+//$topbar-dropdown-link-bg:              #00c6ed;
 // $topbar-dropdown-toggle-size:          5px;
 // $topbar-dropdown-toggle-color:         #fff;
 // $topbar-dropdown-toggle-alpha:         0.5;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color:                    #fff;
-$topbar-link-color-hover:              #c3f5ff;
-// $topbar-link-color-active:             #fff;
+$topbar-link-color:                    #FFF;
+$topbar-link-color-hover:              #FFF;
+// $topbar-link-color-active:          #fff;
 $topbar-link-weight:                   normal;
 $topbar-link-font-size:                emCalc(14px);
-//$topbar-link-hover-lightness:          100%; // Darken by 30%
+//$topbar-link-hover-lightness:        100%; // Darken by 30%
 $topbar-link-bg-hover:                 #c3f5ff;
-//$topbar-link-bg-active:                darken($topbar-bg, 0%);
+//$topbar-link-bg-active:              darken($topbar-bg, 0%);
 
 // $topbar-dropdown-label-color:          #555;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1233,7 +1233,7 @@ $topbar-link-bg-hover:                 #c3f5ff;
 // $topbar-menu-link-color:               #fff;
 // $topbar-menu-icon-color:               #fff;
 //$topbar-menu-link-color-toggled:       #00c6ed;
-$topbar-menu-icon-color-toggled:       #00c6ed;
+//$topbar-menu-icon-color-toggled:       #00c6ed;
 
 // Transitions and breakpoint styles
 
